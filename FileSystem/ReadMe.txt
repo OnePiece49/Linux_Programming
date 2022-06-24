@@ -116,3 +116,9 @@
                         --> Nghĩa là ko lock 1 fle, mà chỉ lock 1 phần vị trí của file
                 +, Lock được từng khuc vực của file
                 +, Nhiều tiến trình có thể đọc/ghi cùng 1 file mà ko xung đột 
+
+            --> fcntl(fd, cmd, &lockstruct);
+                +, Với cmd: action muốn thực hiện
+                    +, F_SETLCK: đặt lock, bỏ lock
+                    +, F_GETLK: đọc thông tin lock
+                +, lockstruct: thông tin muốn lock(gồm trạng thái lock, vùng muốn lock, process lock).

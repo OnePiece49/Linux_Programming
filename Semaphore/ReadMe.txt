@@ -90,3 +90,6 @@
             +, pshared là 0: semaphore sẽ được chia sẻ giữa các process và thread. Semaphore sẽ được tạo ra và trỏ tới một địa chải heap hoặc global
             +, pshared khác 0: semaphore được chia sẻ giữa các process, sem sẽ là địa chỉ của một vùng nhớ được shared giữa các process(System V hoặc Posix mmap).
         +, value: giá trị semaphore được khởi tạo.
+    
+    5.2 Destroying an Unnamed Semaphore:
+        +, Hàm sem_destroy() hủy semaphore
